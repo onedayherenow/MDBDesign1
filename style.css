@@ -1,14 +1,54 @@
+
+/*
 body {
     background-color: #000;
 }
+**/
 
 .divider {
-    background-color: #eee;    
+    height: 100%;
+    background-color: rgb(45, 139, 226);    
+    background: radial-gradient(
+        circle,
+        rgb(45, 139, 226) 0%,
+        rgb(238, 76, 216) 100%
+    );
 }
 
 #intro{
       background-image: url("/img/VectorEquilibrium.jpg");
-      height: 400px;
+      height: 100%;
+      background-color: cyan;
+      background-blend-mode:luminosity;
+}
+
+h2 {
+    font-size: 72px;
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+#about{
+    border: 1px solid black;
+    animation: blink 10s infinite;
+    -webkit-animation: blink 10s infinite;
+}
+
+@keyframes blink {
+    0% {
+        background:rgb(178, 111, 204);
+    }
+    25% {
+        background:rgb(241, 110, 241);
+    }
+    50% {
+        background:rgb(177, 6, 140);
+    }
+    75% {
+        background:rgb(39, 145, 245);
+    }
 }
 
 @media (min-width: 576px) {
@@ -24,6 +64,13 @@ body {
     color:aquamarine;
 }
 
-.introPicture {
-    
+h1 {
+    background: linear-gradient(to left, rgb(72, 223, 52), rgb(228, 210, 51));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+#team {
+    background-color: black;
 }
